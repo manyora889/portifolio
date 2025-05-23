@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM5z4z5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous">
+    <style>
+      
+      footer {
+        background-color: #14213d;
+        color: #eee;
+        text-align: center;
+        padding: 1em 0;
+        font-size: 0.9em;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        margin-top: 2em;
+        font-family: Arial, sans-serif;
+      }
+      .about-img{
+        max-width: 3000px;
+        border-radius: 100%;
+        border: white solid;
+    
+        }
+        .ppc{
+         text-align:center; 
+         
+        }
+       
+      footer a {
+        color: #5dade2;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <title>About Me Image Only</title>
+</head>
+<body>
+
+<nav>
+    <div class="container">
+        <div class="logo">My Portfolio</div>
+        <ul id="navbar">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#interest">Areas of Interest</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="home" aria-label="Home section">
+    <h1>Hi, I'm Takudzwa Manyora</h1>
+    <h3>Welcome to my personal portfolio</h3>
+    <h4 style="font-weight: normal; font-style: italic; color:whitesmoke; margin-top: 0.2em;">
+        TAGLINE: Innovating technology solutions with passion and creativity
+    </h4>
+</section>
+
+<section id="about" aria-label="About section">
+    <h2>About Me</h2>
+    <div class="ppc">
+    <img src="images/my-image.jpg" alt="photo of me" class="about-img"
+     height="210px"
+        width="200px">
+        </div>
+    <p>
+        I am a second-year Computer Science student at Midlands State University with a strong interest in how technology can solve real-world problems. I have built a solid foundation in areas like software development, databases, networking, and computer systems. My main interests include artificial intelligence, machine learning, data science, web development, and cybersecurity. I’m eager to explore more specialized fields and gain practical experience to prepare for a career in tech.
+    </p>
+</section>
+
+<section id="interest" aria-label="Areas of Interest section">
+    <h2>Areas of Interest</h2>
+    <ul>
+        <li>Web Development (Frontend & Backend)</li>
+        <li>Machine Learning & Artificial Intelligence</li>
+        <li>Mobile App Development</li>
+        <li>Cybersecurity</li>
+        <li>UI/UX Design & User Experience</li>
+        <li>Data Science</li>
+    </ul>
+</section>
+
+<section id="skills" aria-label="Technical Skills section">
+    <h2>Technical Skills</h2>
+    <div class="skill-list" aria-label="List of technical skills">
+        <span class="skill-item">HTML</span>
+        <span class="skill-item">CSS</span>
+        <span class="skill-item">JavaScript</span>
+        <span class="skill-item">React</span>
+        <span class="skill-item">Python</span>
+        <span class="skill-item">Django</span>
+        <span class="skill-item">Git & GitHub</span>
+        <span class="skill-item">SQL & NoSQL</span>
+        <span class="skill-item">C#</span>
+    </div>
+</section>
+
+<section id="projects" aria-label="Projects section">
+    <h2>Projects</h2>
+    <div class="projects-container" aria-live="polite">
+        <article class="project-card">
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-description">A responsive personal portfolio website showcasing my skills, projects, and contact information.</p>
+            <div class="project-link"><a href="#" target="_blank" rel="noopener noreferrer">View Project</a></div>
+        </article>
+        <article class="project-card">
+            <h3 class="project-title">Task Manager App</h3>
+            <p class="project-description">A task management application to organize and track daily activities with reminders and deadlines.</p>
+            <div class="project-link"><a href="#" target="_blank" rel="noopener noreferrer">View Project</a></div>
+        </article>
+        <article class="project-card">
+            <h3 class="project-title">Chat Application</h3>
+            <p>A real-time application built using WebSockets technology for instant messaging.</p>
+            <div class="project-link"><a href="#" target="_blank" rel="noopener noreferrer">View Project</a></div>
+        </article>
+    </div>
+</section>
+
+<section id="contact" aria-label="Contact section">
+    <h2>Contact me on:</h2>
+    <p><b>Email:</b> manyoratakudzwa7@gmail.com</p> 
+    <p> <b>Phone number:</b> 0788 764971</p>
+    <p> <b>Social Media:</b></p>
+    
+        
+    <a href="https://www.facebook.com/profile.php?id=100071223675604 "target="_blank" rel="noopener noreferrer"><img src="c:\Users\Nomali PC\Pictures\facebook.png"></a>
+    <a href="https://wa.me/message/CAI5I6JZFRO6F1 "target="_blank" rel="noopener noreferrer"><img src="c:\Users\Nomali PC\Downloads\icons8-whatsapp-48.png"></a>
+    <a href="https://www.linkedin.com/in/takudzwa-manyora-b9375b363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "target="_blank" rel="noopener noreferrer"><img src="c:\Users\Nomali PC\Pictures\icons8-linkedin-48.png"></a>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        function changeActiveLink() {
+            let index = sections.length;
+            while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
+            navLinks.forEach((link) => link.classList.remove('active'));
+            navLinks[index].classList.add('active');
+        }
+        changeActiveLink();
+        window.addEventListener('scroll', changeActiveLink);
+    });
+</script>
+
+<footer>
+    &copy; by manyora @2025
+</footer>
+
+</body>
+</html>
+
